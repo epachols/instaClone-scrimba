@@ -1,7 +1,4 @@
-// <!-- The core Firebase JS SDK is always required and must be listed first -->
-{
-  /* <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>   */
-}
+import { seedDatabase } from "../seed";
 
 // Your web app's Firebase configuration
 const config = {
@@ -17,5 +14,7 @@ const config = {
 const firebase = window.firebase.initializeApp(config);
 
 const { FieldValue } = window.firebase.firestore;
+
+seedDatabase(firebase);
 
 export { firebase, FieldValue };
