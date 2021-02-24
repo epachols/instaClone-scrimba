@@ -1,4 +1,4 @@
-import { seedDatabase } from "../seed";
+// import { seedDatabase } from "../seed.js";
 
 // Your web app's Firebase configuration
 const config = {
@@ -15,6 +15,6 @@ const firebase = window.firebase.initializeApp(config);
 
 const { FieldValue } = window.firebase.firestore;
 
-seedDatabase(firebase);
+// seedDatabase(firebase);
 
 export { firebase, FieldValue };
